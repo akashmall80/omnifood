@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omni Food</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="1.1 grid.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        html{
+            background-color: #fff;
+            color: #555;
+            font-family:'Open Sans Condensed', sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+        }
+        .row img{
+           height: 100px;
+        }
+        .nav li{
+            display: inline-block;
+            justify-content: space-evenly;
+            /* list-style: none; */
+        }
+        .nav ul{
+            display: inline-block;
+            margin-left: 30%;
+           
+           
+        }
+        .nav a{
+            justify-content: space-evenly;
+            color: white;
+            text-decoration: none;
+           padding: 10px 20px;
+           box-shadow: 10px;
+           transition:  background-color 1s;
+        }
+        .item{
+            margin: 0px 40px;
+        }
+        .nav img{
+           margin-left:80px;
+           margin-top: 40px;
+           border-radius:20px 20px;
+           vertical-align: middle;
+        }
+        .row{
+            /* background-image: url(hero.jpg);
+            height: 100%; */
+        }
+        .nav h1{
+            margin-top: 10%;
+            width: 1400px;
+            margin-left: 150px;
+            margin-right: auto;
+           font-size: 50px;
+           color: white;
+        }
+        .btn{
+            margin-left: 150px;
+            margin-top: 20px;
+        }
+        button{
+            padding: 15px 25px;
+           margin-left: 20px;
+           border-radius: 40px;
+           justify-content: space-evenly;
+           background-color: orange;
+           font-family:  'Open Sans', sans-serif;
+          
+           transition:  background-color 1s;
+        }
+       .row{
+           background-image:linear-gradient(rgba(0, 0,0, 0.7),rgba(0,0,0,0.7)), url(hero.jpg);
+           height: 100vh;
+           background-size: cover;
+           background-position: center;
+       }
+       a:hover{
+           background-color: rgb(48, 46, 46);
+       }
+       button:hover{
+           background-color: rgb(255, 221, 158);
+           cursor: pointer;
+       }
+       .plan
+       {
+           text-align: center;
+           margin-top: 20px;
+       }
+       .plan p{
+           width: 700px;
+           margin-left: 400px;
+           font-size: 20px;
+       }
+       .plan h1{
+           font-size: 40px;
+       }
+     .main p{
+         width: 350px;
+         
+
+     }
+     .main h3{
+         
+     }
+     .main{
+         display: inline-block;
+     }
+      
+      .main2 p{
+        width: 350px;
+      }
+      .main2{
+          display: inline-block;
+      }
+      .main3{
+          width: 350px;
+          display: inline-block;
+      }
+      .main4{
+          width: 350px;
+          display: inline-block;
+      }
+      .all{
+          text-align: center;
+          margin-top: 50px;
+      }
+      .images img{
+          height: 250px;
+         
+
+      }
+      .images{
+          text-align: center;
+          margin-top: 40px;
+      }
+      .how h1{
+          text-align: center;
+      }
+      .how img{
+        height: 400px;
+        margin-right: 00%;
+      }
+      .phone{
+          text-align: center;
+          margin-top: 40px;
+          vertical-align: middle;
+      }
+      .phone img{
+          text-align: center;
+      }
+      .phone img{
+          height: 300px;
+      }
+      #ones{
+          height: 50px;
+      }
+      .city img{
+          height: 300px;
+      }
+      .city{
+          text-align: center;
+          margin-top: 20px;
+      }
+      .hi{
+          width: 350px;
+          display: inline-block;
+      }
+      .hi2{
+          width: 350px;
+          display: inline-block;
+      }
+      .hi3{
+          width: 350px;
+          display: inline-block;
+      }
+      .customer{
+          text-align: center;
+      }
+      .how{
+          background-color: #d1d9d9;
+          padding: 20px 30px;
+      }
+      .con p{
+          width: 250px;
+          display: inline-block;
+          border: 2px solid black;
+        height: 400px;
+        text-align: center;
+      }
+      .pre{
+          display: inline-block;
+      }
+      .con{
+          text-align: center;
+          justify-content: space-evenly;
+      }
+      #five{
+          padding-top: 54px;
+        font-size: 35px;
+      }
+      #five p{
+          text-align: center;
+          font-size: 25px;
+      }
+      .premium{
+          text-align: center;
+          background-color: #fdfaf6;
+      }
+      .contactus{
+          text-align: center;
+          background-color: #d1d9d9;
+      }
+      #ad{
+          text-align: center;
+          font-size: 30px;
+      }
+      #ab{
+          font-size: 30px;
+      }
+    </style>
+</head>
+<body>
+    <div class="row">
+    <div class="nav">
+        <img src="logo2.png" alt="">
+        <ul>
+            <li><a href="#" class="item">FOOD DELIVERY</a></li>
+            <li><a href="#" class="item">HOW IT WORKS</a></li>
+            <li><a href="#" class="item">OUR CITIES</a></li>
+            <li><a href="#" class="item">SIGN UP</a></li>
+        </ul>
+        <h1>GOODBYE JUNK FOOD.
+            HELLO SUPER HEALTHY MEALS.</h1>
+            <div class="btn">
+            <button id="one">I am Hungry</button>
+            <button>Show me More</button>
+        </div>
+    </div>
+    
+</div>
+<div class="plan">
+    <h1>GET FOOD FAST — NOT FAST FOOD</h1>
+    <p>Hello, weâ€™re Omnifood, your new premium food delivery service. We know youâ€™re always busy. No time for cooking. So let us take care of that, weâ€™re really good at it, we promise!</p>
+    </div>
+    <div class="all">
+    <div class="main">
+    <h3 >UP TO 365 DAYS/YEAR</h3>
+    <p>Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.</p>
+</div>
+    <div class="main2">
+    <h3 id="two">READY IN 20 MINUTES</h3>
+    <p>You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.</p> 
+</div>
+    <div class="main3">
+    <h3 id="three">100% ORGANIC</h3>
+    <p>All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!</p>
+</div>
+<div class="main4">
+    <h3 id="four">ORDER ANYTHING</h3>
+    <p>We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!</p> 
+</div>
+
+</div>
+<div class="images">
+    <img src="1.jpg" alt="">
+<img src="2.jpg" alt="">
+<img src="3.jpg" alt="">
+<img src="4.jpg" alt="">
+<img src="5.jpg" alt="">
+<img src="6.jpg" alt="">
+<img src="7.jpg" alt="">
+<img src="8.jpg" alt="">
+</div>
+<div class="how">
+    <h1>HOW IT WORKS — SIMPLE AS 1, 2, 3</h1>
+    <div class="phone">
+    <img src="phone.png" alt="">
+   <li id=>Choose the subscription plan that best fits your needs and sign up today.</li>
+    <br>
+    <li>Order your delicious meal using our mobile app or website. Or you can even call us!</li>
+    <br>
+    <li>Enjoy your meal after less than 20 minutes. See you the next time!</li>
+    <img src="google.png" id="ones"alt="">
+</div>
+</div>
+<div class="city">
+    <h1>WE'RE CURRENTLY IN THESE CITIES</h1>
+    <img src="ludhiana.jpg" alt="">
+    <img src="jalandhar.jpg" alt="">
+    <img src="chandigarh.jpg" alt="">
+</div>
+<div class="customer">
+    <h1>OUR CUSTOMERS CAN'T LIVE WITHOUT US</h1>
+    <div class="hi">
+    <p>"Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to it, I couldn't live without my daily meals"   akash</p></div>
+    <div class="hi2">
+    <p>"Inexpensive, healthy and great-tasting meals, delivered right to my home. We have lots of food delivery here in Lisbon, but no one comes even close to Omifood. Me and my family are so in love!"   adarsh</p></div>
+    <div class="hi3">
+        <p>"I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!"  sejal</p>
+    </div>
+</div>
+<div class="premium">
+    <h1>START EATING HEALTHY TODAY</h1>
+    <div class="con">
+        
+        <p id="ad">PREMIUM
+        $399 / month
+
+            Thatâ€™s only 13.30$ per meal
+            
+            1 meal every day
+            Order 24/7
+            Access to newest creations
+            Free delivery<br>
+        <input type="submit" name="" id=""></p>
+            <p id="ab">PRO
+                $149 / month
+                
+                Thatâ€™s only 14.90$ per meal
+                
+                1 meal 10 days/month
+                Order 24/7
+                Access to newest creations
+                Free delivery<input type="submit" name="" id=""></p>
+                <p id="five">STARTER
+                    $19 / meal
+                    
+                    1 meal
+                    Order from 8 am to 12 pm
+                    Free delivery<br><input type="submit" name="" id=""></p>
+               
+    </div>
+</div>
+<div class="contactus">
+<h1>WE'RE HAPPY TO HEAR FROM YOU</h1>
+Name:<input type="text" name="" id=""><br>
+Email:<input type="Email" name="" id=""><br>
+Age:<input type="number" name="" id=""><br>
+<input type="submit" name="" id="">
+</div>
+</body>
+</html>
